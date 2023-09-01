@@ -1,5 +1,5 @@
 // Course:			IGME 309
-// Student Name:	
+// Student Name:	Allan Flores
 // Friday Exercise:	01
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -18,7 +18,10 @@ int GenerateRandomNumber() {
 
 	/**********************************/
 	// write your code below 
+	int min = 1;
+	int max = 100;
 
+	targetNumber = (rand() % max) + min;
 
 	// write your code above
 	/**********************************/
@@ -38,7 +41,7 @@ int PlayerEnterANumber() {
 	// it will be handled by the provided Gameloop() function.
 	/**********************************/
 	// write your code below 
-
+	cin >> playerNumber;
 
 	// write your code above
 	/**********************************/
@@ -54,7 +57,12 @@ int HighOrLow(int targetNumber, int playerNumber) {
 	/**********************************/
 	// write your code below
 
-	return 0; // You could delete this line of code.
+	if (targetNumber == playerNumber)
+		return 0;
+	else if (targetNumber > playerNumber)
+		return 1;
+	else if (targetNumber < playerNumber)
+		return 2;
 
 	// write your code above
 	/**********************************/

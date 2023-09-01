@@ -1,0 +1,4 @@
+﻿  E01-Allan-Flores.cpp
+C:\Users\itsal\source\repos\IGME-309\E01-Allan-Flores\E01-Allan-Flores\E01-Allan-Flores.cpp(110,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\itsal\source\repos\IGME-309\E01-Allan-Flores\E01-Allan-Flores\E01-Allan-Flores.cpp(69): warning C4715: 'HighOrLow': not all control paths return a value
+  E01-Allan-Flores.vcxproj -> C:\Users\itsal\source\repos\IGME-309\E01-Allan-Flores\x64\Debug\E01-Allan-Flores.exe

@@ -1,1 +1,2 @@
 C:\Users\itsal\source\repos\IGME-309\Setup-OpenGL\x64\Debug\Setup-OpenGL.exe
+C:\Users\itsal\Documents\GitHub\IGME-309\Setup-OpenGL\x64\Debug\Setup-OpenGL.exe

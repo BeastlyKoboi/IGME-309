@@ -1,0 +1,9 @@
+﻿  firstProgram.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\numbers(12): warning STL4038: The contents of <numbers> are available only with C++20 or later.
+C:\Users\itsal\Documents\GitHub\IGME-309\A01-Allan-Flores\firstProgram.cpp(35,23): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\itsal\Documents\GitHub\IGME-309\A01-Allan-Flores\firstProgram.cpp(36,81): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\itsal\Documents\GitHub\IGME-309\A01-Allan-Flores\firstProgram.cpp(36,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\itsal\Documents\GitHub\IGME-309\A01-Allan-Flores\firstProgram.cpp(50,23): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\itsal\Documents\GitHub\IGME-309\A01-Allan-Flores\firstProgram.cpp(51,81): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\itsal\Documents\GitHub\IGME-309\A01-Allan-Flores\firstProgram.cpp(51,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  A01-Allan-Flores.vcxproj -> C:\Users\itsal\Documents\GitHub\IGME-309\A01-Allan-Flores\x64\Debug\A01-Allan-Flores.exe

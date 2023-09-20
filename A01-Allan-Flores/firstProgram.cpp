@@ -1,6 +1,6 @@
-// Course: 		    IGME 309
-// Student Name: 	Allan Flores
-// Friday Exercise: 02
+// Course: 		        IGME 309
+// Student Name: 	    Allan Flores
+// Assignment Number:   01
 
 #ifdef __APPLE__
 #include <GLUT/glut.h> // include glut for Mac
@@ -8,9 +8,6 @@
 #include <GL/freeglut.h> //include glut for Windows
 #endif
 #include <math.h>
-#include <cmath>
-#define _USE_MATH_DEFINES 
-#include <numbers>
 
 // the window's width and height
 int width, height;
@@ -22,7 +19,7 @@ void init(void)
     width = 600;
     height = 600;
 
-    sides = 10.0f; 
+    sides = 50.0f; 
 }
 
 void drawFilledCircle(float red, float green, float blue, float center_x, float center_y, float radius) 
@@ -54,11 +51,81 @@ void drawWireframeCircle(float red, float green, float blue, float center_x, flo
     glEnd();
 }
 
+void drawPanda() {
+    // Left Ear
+    drawFilledCircle(255.0f / 255.0f, 51.0f / 255.0f, 153.0f / 255.0f, -3.0f, 7.0f, 1.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, -3.0f, 7.0f, 1.0f, 2.0f);
+    // Right Ear
+    drawFilledCircle(255.0f / 255.0f, 51.0f / 255.0f, 153.0f / 255.0f, 3.0f, 7.0f, 1.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, 3.0f, 7.0f, 1.0f, 2.0f);
+
+    // Chest 
+    drawFilledCircle(6.0f / 255.0f, 175.0f / 255.0f, 0.0f / 255.0f, 0.0f, -1.0f, 3.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, 0.0f, -1.0f, 3.0f, 2.0f);
+
+    // Head
+    drawFilledCircle(1.0f, 1.0f, 1.0f, 0.0f, 4.0f, 4.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, 0.0f, 4.0f, 4.0f, 2.0f);
+
+    // Left Arm
+    drawFilledCircle(158.0f / 255.0f, 23.0f / 255.0f, 192.0f / 255.0f, -3.0f, 0.0f, 1.25f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, -3.0f, 0.0f, 1.25f, 2.0f);
+    // Right Arm
+    drawFilledCircle(158.0f / 255.0f, 23.0f / 255.0f, 192.0f / 255.0f, 3.0f, 0.0f, 1.25f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, 3.0f, 0.0f, 1.25f, 2.0f);
+
+    // Left Hand
+    drawFilledCircle(243.0f / 255.0f, 198.0f / 255.0f, 49.0f / 255.0f, -3.0f, 0.0f, 1.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, -3.0f, 0.0f, 1.0f, 2.0f);
+    // Right Hand
+    drawFilledCircle(243.0f / 255.0f, 198.0f / 255.0f, 49.0f / 255.0f, 3.0f, 0.0f, 1.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, 3.0f, 0.0f, 1.0f, 2.0f);
+
+    // Left Leg 
+    drawFilledCircle(59.0f / 255.0f, 255.0f / 255.0f, 53.0f / 255.0f, -3.0f, -3.0f, 1.5f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, -3.0f, -3.0f, 1.5f, 2.0f);
+    // Right Leg
+    drawFilledCircle(59.0f / 255.0f, 255.0f / 255.0f, 53.0f / 255.0f, 3.0f, -3.0f, 1.5f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, 3.0f, -3.0f, 1.5f, 2.0f);
+
+    // Left Foot
+    drawFilledCircle(243.0f / 255.0f, 198.0f / 255.0f, 49.0f / 255.0f, -2.6f, -3.0f, 1.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, -2.6f, -3.0f, 1.0f, 2.0f);
+    // Right Foot
+    drawFilledCircle(243.0f / 255.0f, 198.0f / 255.0f, 49.0f / 255.0f, 2.6f, -3.0f, 1.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, 2.6f, -3.0f, 1.0f, 2.0f);
+
+    // Left Eye
+    drawFilledCircle(0.0f, 0.0f, 0.0f, -2.0f, 5.0f, 1.5f);
+    // Right Eye
+    drawFilledCircle(0.0f, 0.0f, 0.0f, 2.0f, 5.0f, 1.5f);
+
+    // Left Sclera
+    drawFilledCircle(1.0f, 1.0f, 1.0f, -1.5f, 5.0f, 1.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, -1.5f, 5.0f, 1.0f, 2.0f);
+    // Right Sclera
+    drawFilledCircle(1.0f, 1.0f, 1.0f, 1.5f, 5.0f, 1.0f);
+    drawWireframeCircle(0.0f, 0.0f, 0.0f, 1.5f, 5.0f, 1.0f, 2.0f);
+
+    // Left Iris
+    drawFilledCircle(153.0f / 255.0f, 153.0f / 255.0f, 255.0f / 255.0f, -1.5f, 5.0f, 0.75f);
+    // Right Iris
+    drawFilledCircle(153.0f / 255.0f, 153.0f / 255.0f, 255.0f / 255.0f, 1.5f, 5.0f, 0.75f);
+
+    // Nose 
+    drawFilledCircle(0.0f, 0.0f, 0.0f, 0.0f, 3.0f, 0.75f);
+
+    // Mouth
+    drawFilledCircle(0.0f, 0.0f, 0.0f, -1.0f, 1.5f, 0.25f);
+
+
+}
+
 // called when the GL context need to be rendered
 void display(void)
 {
     // clear the screen to white, which is the background color
-    glClearColor(1.0, 1.0, 1.0, 0.0);
+    glClearColor(135.0f / 255.0f, 206.0f / 255.0f, 235.0f / 255.0f, 0.0);
 
     // clear the buffer stored for drawing
     glClear(GL_COLOR_BUFFER_BIT);
@@ -76,13 +143,9 @@ void display(void)
     // specify the color for new drawing
     glColor3f(0.0, 0.0, 1.0);
 
-    drawFilledCircle(1.0f, 1.0f, 1.0f, 0.0f, 4.0f, 4.0f);
-    drawWireframeCircle(0.0f, 0.0f, 0.0f, 0.0f, 4.0f, 4.0f, 2.0f);
+    drawPanda();
 
-
-    //drawWireframeCircle(1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 5.0f, 1.0f);
     glPointSize(1.0f);
-
 
     glutSwapBuffers();
 }
@@ -98,7 +161,6 @@ void reshape(int w, int h)
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     gluOrtho2D(-10.0, 10.0, -10.0, 10.0);
-    //gluOrtho2D(-5.0, 5.0, -5.0, 5.0);
 
     /* tell OpenGL to use the whole window for drawing */
     glViewport(0, 0, (GLsizei)width, (GLsizei)height);
@@ -114,11 +176,15 @@ void keyboard(unsigned char key, int x, int y)
         case 27:
             exit(0);
             break;
+
+        // Increases the number of sides 
         case '+':
             if (sides < 100) 
                 sides++;
             glutPostRedisplay();
             break;
+
+        // Decreases the number of sides
         case '-':
             if (sides > 3) 
                 sides--;

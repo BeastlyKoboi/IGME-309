@@ -1,0 +1,6 @@
+﻿  firstProgram.cpp
+C:\Users\itsal\Documents\GitHub\IGME-309\E04-Allan-Flores\firstProgram.cpp(52,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\itsal\Documents\GitHub\IGME-309\E04-Allan-Flores\firstProgram.cpp(62,37): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\itsal\Documents\GitHub\IGME-309\E04-Allan-Flores\firstProgram.cpp(62,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\itsal\Documents\GitHub\IGME-309\E04-Allan-Flores\firstProgram.cpp(81,33): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+  E04-Allan-Flores.vcxproj -> C:\Users\itsal\Documents\GitHub\IGME-309\E04-Allan-Flores\x64\Debug\E04-Allan-Flores.exe

@@ -18,11 +18,13 @@ int rasterSize[] = { 600, 600 };
 
 MyMesh g_mesh = MyMesh();
 
+float theta = 0.0f;
+float deltaTime = 0.0f;
 
 void init(void)
 {
 	// load the mesh data to g_mesh
-	char fileName[10] = { "data2.obj" };
+	char fileName[12] = { "bunny2k.obj" };
 
 	g_mesh.load(fileName);
 }
@@ -64,6 +66,18 @@ void keyboard(unsigned char key, int x, int y)
 	}
 }
 
+void idle() {
+	deltaTime = glutGet(GLUT_ELAPSED_TIME) - deltaTime;
+
+	theta += deltaTime * 10;
+
+
+
+	deltaTime = glutGet(GLUT_ELAPSED_TIME);
+
+	glutPostRedisplay();
+}
+
 int main(int argc, char* argv[])
 {
 	init();
@@ -75,6 +89,7 @@ int main(int argc, char* argv[])
 	glutReshapeFunc(reshape);
 	glutDisplayFunc(display);
 	glutKeyboardFunc(keyboard);
+	glutIdleFunc(idle);
 	glutMainLoop();
 	return 0;
 

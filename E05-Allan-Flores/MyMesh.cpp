@@ -117,6 +117,8 @@ void MyMesh::load(const unsigned int p_vertNum, const unsigned int p_triNum, con
 void MyMesh::update()
 {
 	// we will use this for transformations later.... 
+
+
 }
 
 void MyMesh::draw()
